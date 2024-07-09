@@ -3,121 +3,23 @@
 sitemap:
   exclude: 'yes'
 ---
-@charset "utf-8";
-
-@import "mixins";
-@import "variables";
-
-@import "base";
-
-@import "header";
-@import "articles";
-@import "titles";
-@import "hero";
-
-@import "components";
-
-@import "notices";
-@import "blockquote";
-@import "table";
-@import "code";
-
-@import "404";
-@import "jekyll-github";
-@import "pagination";
-@import "footer";
-
-@import "icons";
-
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  margin: 0;
-  padding: 0;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
-  text-align: center;
-  padding: 20px 0;
+header, footer {
   background-color: #333;
   color: #fff;
-}
-
-header h1 {
-  margin: 0;
-}
-
-header p {
-  margin: 10px 0 0;
-  font-size: 1.2em;
+  text-align: center;
+  padding: 1em;
 }
 
 main {
-  padding: 20px 0;
-}
-
-.intro {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.intro h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.intro p {
-  font-size: 1.2em;
-  color: #666;
-}
-
-.posts {
-  margin-top: 40px;
-}
-
-.posts h3 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-}
-
-.posts ul {
-  list-style: none;
-  padding: 0;
-}
-
-.posts li {
+  margin: 2em auto;
+  padding: 2em;
+  max-width: 800px;
   background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.posts a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.posts p {
-  color: #666;
-}
-
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #333;
-  color: #fff;
-}
-
-footer p {
-  margin: 0;
 }
